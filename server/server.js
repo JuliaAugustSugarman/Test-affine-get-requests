@@ -15,6 +15,10 @@ let quotes_data = [
 
 
 app.get('/quotes', (req, res) => {
+    res.send(index.html);
+});
+
+app.get('/quotes', (req, res) => {
     res.send(quotes_data);
 });
 
